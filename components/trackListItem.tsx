@@ -28,7 +28,6 @@ const styles = StyleSheet.create({
     alignItems : 'center',
     padding:5,
     gap : 20,
-
     marginVertical : 5,
   },
   image : {

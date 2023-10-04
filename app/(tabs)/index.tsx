@@ -3,7 +3,7 @@ import {tracks} from '../../assets/data/tracks'
 import { Text, View } from '../../components/Themed';
 import { FlatList } from 'react-native-gesture-handler';
 import TrackListItem from '../../components/trackListItem';
-
+import Player  from '../../components/player';
 export default function TabOneScreen() {
   return (
     <View style={styles.container}>
@@ -12,9 +12,7 @@ export default function TabOneScreen() {
         renderItem={({item})=>(
           <TrackListItem track={item}/>
         )}
-        showsVerticalScrollIndicator={false}
       />
-  
     </View>
   );
 }
@@ -24,6 +22,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor : 'black',  
   },
   title: {
     fontSize: 20,
