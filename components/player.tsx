@@ -3,12 +3,17 @@ import React from 'react'
 import { Track } from '../constants/types'
 import {tracks } from '../assets/data/tracks'
 import { Ionicons } from '@expo/vector-icons'
-    const track = tracks[3]
+import { usePlayerContext } from '../providers/PlayerProvider'
+
+// const track = tracks[3]
 
 const Player = () => {
+  
+    const { track} = usePlayerContext();
+
     if (!track) {
-        return null
-    }
+            return null
+        }
   return (
     <View style={styles.container}>
         <View style = {styles.player}>
